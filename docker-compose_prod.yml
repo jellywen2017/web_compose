@@ -14,6 +14,6 @@ services:
         volumes:
             - ./web/nginx_prod.conf:/usr/local/nginx/conf/nginx.conf
             - ./web/start_prod.sh:/start.sh
-            - ./web/cert/:/usr/local/nginx/cert/
+            - ./web/cert/:/usr/local/nginx/conf/cert/
             #- ./web/.ssh/id_rsa:/home/www/.ssh/id_rsa
             - /data/docker/jelly_web/:/data/www/
