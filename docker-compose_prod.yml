@@ -1,0 +1,19 @@
+version: '2.1'
+services:
+    jelly-web-prod:
+        container_name: jelly-web-prod
+        restart: always
+        image: jellywen/centos7-php7-nginx:v1.1
+        entrypoint: /start.sh
+        hostname: jelly-web-prod
+        ports:
+             - "8081:8081"
+             - "8082:8082"
+             - "443:443"
+             - "2001:22"
+        volumes:
+            - ./web/nginx_prod.conf:/usr/local/nginx/conf/nginx.conf
+            - ./web/start_prod.sh:/start.sh
+            - ./web/cert/:/usr/local/nginx/cert/
+            #- ./web/.ssh/id_rsa:/home/www/.ssh/id_rsa
+            - /data/docker/jelly_web/:/data/www/
