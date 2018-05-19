@@ -23,6 +23,7 @@ docker exec -it jelly-web-prod bash
 su www
 touch /home/www/.ssh/id_rsa
 chmod 600 /home/www/.ssh/id_rsa
-echo "个人git私钥" >> /home/www/.ssh/id_rsa
+vim /home/www/.ssh/id_rsa
+#echo "个人git私钥" >> /home/www/.ssh/id_rsa
 
 
