@@ -66,8 +66,8 @@ export LC_ALL=zh_CN.utf8
 # touch /etc/ilogtail/user_defined_id
 # #kd_credit 用户自定义标识
 # echo "jelly_web" >> /etc/ilogtail/user_defined_id
-#启动服务
-/etc/init.d/ilogtaild start
+# #启动服务
+# /etc/init.d/ilogtaild start
 
 #启动crond 放在修改时区后 否则要重启
 /usr/sbin/crond start
