@@ -30,7 +30,7 @@ usermod -d /home/www www
 mkdir -p /home/www/.ssh
 chown www:www -R /home/www
 chmod 700 /home/www/.ssh
-chmod 600 /home/www/.ssh/id_rsa
+#chmod 600 /home/www/.ssh/id_rsa
 
 mkdir -p /root/.ssh
 
