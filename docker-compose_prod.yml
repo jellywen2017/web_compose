@@ -7,8 +7,8 @@ services:
         entrypoint: /start.sh
         hostname: jelly-web-prod
         ports:
-             - "8081:8081"
-             - "8082:8082"
+             - "81:81"
+             - "82:82"
              - "443:443"
              - "2001:22"
         volumes:
