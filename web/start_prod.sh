@@ -58,6 +58,7 @@ localedef -c -f UTF-8 -i zh_CN zh_CN.utf8
 export LC_ALL=zh_CN.utf8
 
 #增加软连接
+rm -rf /usr/local/bin/php
 ln -s /usr/local/php/bin/php /usr/local/bin/php
 
 #校准时间
